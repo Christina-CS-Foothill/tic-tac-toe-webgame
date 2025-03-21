@@ -5,11 +5,41 @@ function openGameSettings(event) {
 
 function saveGameSettings(event) {
   event.preventDefault();
+  // console.log(gameThemeLinkElement.href);
   if (purpleOptionElement.selected) {
+    //gameboard theme
+    gameThemeLinkElement.setAttribute("href", "/styles/game.css");
+
     //main header
     mainHeaderElement.classList.add("default-background-scheme");
     mainHeaderElement.classList.remove("red-background-scheme");
     mainHeaderElement.classList.remove("blue-background-scheme");
+
+    //body
+    bodyElement.classList.add("body-default-color");
+    bodyElement.classList.remove("body-red-color");
+    bodyElement.classList.remove("body-blue-color");
+
+    //game config windows
+    for (const gameConfigListElement of gameConfigListElements) {
+      gameConfigListElement.classList.add("default-game-config-bg-color");
+      gameConfigListElement.classList.remove("red-game-config-bg-color");
+      gameConfigListElement.classList.remove("blue-game-config-bg-color");
+    }
+
+    //game config h3 elements
+    for (const gameConfigH3Element of gameConfigH3Elements) {
+      gameConfigH3Element.classList.add("default-game-config-h3-color");
+      gameConfigH3Element.classList.remove("red-game-config-h3-color");
+      gameConfigH3Element.classList.remove("blue-game-config-h3-color");
+    }
+
+    //game config p elements (player symbols)
+    for (const gameConfigPElement of gameConfigPElements) {
+      gameConfigPElement.classList.add("default-player-symbol-color");
+      gameConfigPElement.classList.remove("red-player-symbol-color");
+      gameConfigPElement.classList.remove("blue-player-symbol-color");
+    }
 
     //buttons
     for (const btnElement of allBtnElements) {
@@ -25,10 +55,39 @@ function saveGameSettings(event) {
       }
     }
   } else if (redOptionElement.selected) {
+    //gameboard theme
+    gameThemeLinkElement.setAttribute("href", "/styles/red-game.css");
+
     //main header
     mainHeaderElement.classList.remove("default-background-scheme");
     mainHeaderElement.classList.add("red-background-scheme");
     mainHeaderElement.classList.remove("blue-background-scheme");
+
+    //body
+    bodyElement.classList.remove("body-default-color");
+    bodyElement.classList.add("body-red-color");
+    bodyElement.classList.remove("body-blue-color");
+
+    //game config windows
+    for (const gameConfigListElement of gameConfigListElements) {
+      gameConfigListElement.classList.remove("default-game-config-bg-color");
+      gameConfigListElement.classList.add("red-game-config-bg-color");
+      gameConfigListElement.classList.remove("blue-game-config-bg-color");
+    }
+
+    //game config h3 elements
+    for (const gameConfigH3Element of gameConfigH3Elements) {
+      gameConfigH3Element.classList.remove("default-game-config-h3-color");
+      gameConfigH3Element.classList.add("red-game-config-h3-color");
+      gameConfigH3Element.classList.remove("blue-game-config-h3-color");
+    }
+
+    //game config p elements (player symbols)
+    for (const gameConfigPElement of gameConfigPElements) {
+      gameConfigPElement.classList.remove("default-player-symbol-color");
+      gameConfigPElement.classList.add("red-player-symbol-color");
+      gameConfigPElement.classList.remove("blue-player-symbol-color");
+    }
 
     //buttons
     for (const btnElement of allBtnElements) {
@@ -44,13 +103,41 @@ function saveGameSettings(event) {
       }
     }
   } else {
+    //gameboard theme
+    gameThemeLinkElement.setAttribute("href", "/styles/blue-game.css");
+
     mainHeaderElement.classList.remove("default-background-scheme");
     mainHeaderElement.classList.remove("red-background-scheme");
     mainHeaderElement.classList.add("blue-background-scheme");
 
+    //body
+    bodyElement.classList.remove("body-default-color");
+    bodyElement.classList.remove("body-red-color");
+    bodyElement.classList.add("body-blue-color");
+
+    //game config windows
+    for (const gameConfigListElement of gameConfigListElements) {
+      gameConfigListElement.classList.remove("default-game-config-bg-color");
+      gameConfigListElement.classList.remove("red-game-config-bg-color");
+      gameConfigListElement.classList.add("blue-game-config-bg-color");
+    }
+
+    //game config h3 elements
+    for (const gameConfigH3Element of gameConfigH3Elements) {
+      gameConfigH3Element.classList.remove("default-game-config-h3-color");
+      gameConfigH3Element.classList.remove("red-game-config-h3-color");
+      gameConfigH3Element.classList.add("blue-game-config-h3-color");
+    }
+
+    //game config p elements (player symbols)
+    for (const gameConfigPElement of gameConfigPElements) {
+      gameConfigPElement.classList.remove("default-player-symbol-color");
+      gameConfigPElement.classList.remove("red-player-symbol-color");
+      gameConfigPElement.classList.add("blue-player-symbol-color");
+    }
+
     //buttons
     for (const btnElement of allBtnElements) {
-      console.log(btnElement);
       if (btnElement.classList.contains("btn-alt")) {
         //must be a clear btn
         btnElement.classList.remove("default-color");

@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: "Open-Sans", sans-serif;
   color: rgb(44, 41, 44);
-  background-color: rgb(247, 239, 247);
 }
 
 #main-header {
@@ -15,11 +14,15 @@ body {
   display: block;
 }
 
+#settings-btn:hover {
+  color: rgb(196, 194, 194);
+}
+
 .btn {
   font: inherit;
   padding: 0.5rem 1.5rem;
   /* background-color: rgb(140, 0, 255); */
-  border: 1px solid rgb(140, 0, 255);
+  /* border: 1px solid rgb(140, 0, 255); */
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -41,26 +44,61 @@ body {
   border-color: transparent;
 }
 
+.body-default-color {
+  background-color: rgb(247, 239, 247);
+}
+
 .default-background-scheme {
   background-color: rgb(140, 0, 255);
+  border: 1px solid rgb(140, 0, 255);
 }
 
 .default-color {
   color: rgb(140, 0, 255);
 }
 
+.body-red-color {
+  background-color: rgb(239 219 219);
+}
+
 .red-background-scheme {
   background-color: red;
+  border: 1px solid red;
+}
+
+.red-background-scheme:hover {
+  background-color: rgb(190, 34, 10);
+  border-color: rgb(190, 34, 10);
 }
 
 .red-scheme {
   color: red;
 }
 
+.red-scheme:hover {
+  background-color: rgb(250, 220, 220);
+  border-color: transparent;
+}
+
+.body-blue-color {
+  background-color: rgb(217 223 237);
+}
+
 .blue-background-scheme {
   background-color: blue;
+  border: 1px solid blue;
+}
+
+.blue-background-scheme:hover {
+  background-color: rgb(16, 3, 196);
+  border: 1px solid rgb(16, 3, 196);
 }
 
 .blue-scheme {
   color: blue;
+}
+
+.blue-scheme:hover {
+  background-color: rgb(232, 239, 255);
+  border-color: transparent;
 }

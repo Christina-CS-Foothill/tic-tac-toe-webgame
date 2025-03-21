@@ -31,6 +31,15 @@ const gameOverElement = document.getElementById("game-over");
 
 const mainHeaderElement = document.getElementById("main-header");
 const allBtnElements = document.querySelectorAll("button");
+const bodyElement = document.querySelector("body");
+const gameConfigListElements = document.querySelectorAll(
+  "#game-configuration li"
+);
+const gameConfigH3Elements = document.querySelectorAll(
+  "#game-configuration h3"
+);
+const gameConfigPElements = document.querySelectorAll("#game-configuration p");
+const gameThemeLinkElement = document.getElementById("game-theme");
 
 const settingsBtnElement = document.getElementById("settings-btn");
 const saveSettingsBtnElement = document.getElementById("save-settings-btn");
