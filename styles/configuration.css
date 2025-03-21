@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+#settings-overlay {
+  text-align: center;
+}
+
 #config-overlay h2 {
   margin: 0.5rem 0;
 }
@@ -20,6 +24,18 @@
   border: 1px solid rgb(204, 204, 204);
   width: 15rem;
   padding: 0.35rem;
+}
+
+.form-control select {
+  padding: 0.5rem 2rem;
+  font: inherit;
+  text-align: center;
+}
+
+.settings-select label {
+  font-size: 1.2rem;
+  display: inline;
+  margin-right: 1rem;
 }
 
 .error label {

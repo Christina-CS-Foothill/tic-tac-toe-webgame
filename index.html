@@ -22,9 +22,12 @@
 
   <body>
     <div id="backdrop"></div>
-    <header id="main-header">
-      <h1>Play Tic, Tac, Toe</h1>
-      <p>Built with HTML, CSS, JavaScript and - of course - lots of love!</p>
+    <header id="main-header" class="default-background-scheme">
+      <button id="settings-btn" class="">Settings</button>
+      <div>
+        <h1>Play Tic, Tac, Toe</h1>
+        <p>Built with HTML, CSS, JavaScript and - of course - lots of love!</p>
+      </div>
     </header>
     <main>
       <aside class="modal" id="config-overlay">
@@ -36,8 +39,33 @@
           </div>
           <p id="config-errors"></p>
           <div>
-            <button type="reset" class="btn btn-alt" id="cancel-config-btn">Cancel</button>
-            <button type="submit" class="btn">Confirm</button>
+            <button type="reset" class="btn btn-alt default-color" id="cancel-config-btn">Cancel</button>
+            <button type="submit" class="btn default-background-scheme">Confirm</button>
+          </div>
+        </form>
+      </aside>
+      <aside class="modal" id="settings-overlay">
+        <h2>Game Settings:</h2>
+        <form>
+          <div class="form-control settings-select">
+            <label for="game-color-scheme">Choose color scheme:</label>
+            <select id="game-color-scheme" name="game-color-scheme">
+              <option id="purple" value="purple">Purple(Default)</option>
+              <option id="red" value="red">Red</option>
+              <option id="blue" value="blue">Blue</option>
+            </select>
+          </div>
+          <div class="form-control settings-select">
+            <label for="game-font-family">Choose font family:</label>
+            <select id="game-font-family" name="game-font-family">
+              <option id="open-sans" value="open-sans">Open-Sans(Default)</option>
+              <option id="sans-serif" value="sans-serif">sans-serif</option>
+              <option id="courier-new" value="courier-new">Courier New</option>
+            </select>
+          </div>
+          <div>
+            <button type="reset" class="btn btn-alt default-color" id="cancel-settings-btn">Cancel</button>
+            <button type="submit" class="btn default-background-scheme" id="save-settings-btn">Save</button>
           </div>
         </form>
       </aside>
@@ -48,7 +76,7 @@
               <h2>Player 1</h2>
               <h3>PLAYER NAME</h3>
               <p class="player-symbol">X</p>
-              <button class="btn btn-alt" id="edit-player-1-btn" data-playerid="1">Edit</button>
+              <button class="btn btn-alt default-color" id="edit-player-1-btn" data-playerid="1">Edit</button>
             </article>
           </li>
           <li>
@@ -56,11 +84,11 @@
               <h2>Player 2</h2>
               <h3>PLAYER NAME</h3>
               <p class="player-symbol">O</p>
-              <button class="btn btn-alt" id="edit-player-2-btn" data-playerid="2">Edit </button>
+              <button class="btn btn-alt default-color" id="edit-player-2-btn" data-playerid="2">Edit </button>
             </article>
           </li>
         </ol>
-        <button class="btn" id="start-game-btn">Start New Game</button>
+        <button class="btn default-background-scheme" id="start-game-btn">Start New Game</button>
       </section>
       <section id="active-game">
         <article id="game-over">

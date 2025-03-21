@@ -6,16 +6,19 @@ body {
 }
 
 #main-header {
-  background-color: rgb(140, 0, 255);
   color: white;
   padding: 2rem 5%;
   text-align: center;
 }
 
+#settings-btn {
+  display: block;
+}
+
 .btn {
   font: inherit;
   padding: 0.5rem 1.5rem;
-  background-color: rgb(140, 0, 255);
+  /* background-color: rgb(140, 0, 255); */
   border: 1px solid rgb(140, 0, 255);
   color: white;
   border-radius: 4px;
@@ -25,7 +28,7 @@ body {
 .btn-alt {
   background-color: transparent;
   border-color: transparent;
-  color: rgb(140, 0, 255);
+  /* color: rgb(140, 0, 255); */
 }
 
 .btn:hover {
@@ -36,4 +39,28 @@ body {
 .btn-alt:hover {
   background-color: rgb(245, 232, 255);
   border-color: transparent;
+}
+
+.default-background-scheme {
+  background-color: rgb(140, 0, 255);
+}
+
+.default-color {
+  color: rgb(140, 0, 255);
+}
+
+.red-background-scheme {
+  background-color: red;
+}
+
+.red-scheme {
+  color: red;
+}
+
+.blue-background-scheme {
+  background-color: blue;
+}
+
+.blue-scheme {
+  color: blue;
 }
