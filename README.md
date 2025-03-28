@@ -12,14 +12,9 @@ Uses JS, CSS and HTML for a two player tic tac toe game that can be run in the b
 |<p align="center">Player 2 "O" diagonal win</p><p align="center"><img src="https://github.com/user-attachments/assets/07eb1f27-5720-4c21-be47-adb89e8c318c" width="450" alt="player O diagonal win"></p>|<p align="center">Game draw</p><p align="center"><img src="https://github.com/user-attachments/assets/893b8a3a-be7c-460d-a183-5b5cb315c765" width="450" alt="game draw"></p>|
 
 
-
-
-
-
-
-
-
-
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/cfb8c301-c94a-4c01-ae59-010c74b49367" width="350" />
+</div>
 
 
 
