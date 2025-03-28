@@ -1,7 +1,18 @@
 body {
   margin: 0;
-  font-family: "Open-Sans", sans-serif;
   color: rgb(44, 41, 44);
+}
+
+.default-font-family {
+  font-family: "Open-Sans", sans-serif;
+}
+
+.times-new-roman-font-family {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.courier-new-font-family {
+  font-family: "Courier New", Courier, monospace;
 }
 
 #main-header {

@@ -47,6 +47,9 @@ const cancelSettingsBtnElement = document.getElementById("cancel-settings-btn");
 const purpleOptionElement = document.getElementById("purple");
 const redOptionElement = document.getElementById("red");
 const blueOptionElement = document.getElementById("blue");
+const openSansOptionElement = document.getElementById("open-sans");
+const timesNewRomanOptionElement = document.getElementById("sans-serif");
+const courierNewOptionElement = document.getElementById("courier-new");
 
 const editPlayer1BtnElement = document.getElementById("edit-player-1-btn");
 const editPlayer2BtnElement = document.getElementById("edit-player-2-btn");

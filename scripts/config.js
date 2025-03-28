@@ -5,7 +5,8 @@ function openGameSettings(event) {
 
 function saveGameSettings(event) {
   event.preventDefault();
-  // console.log(gameThemeLinkElement.href);
+
+  //color settings
   if (purpleOptionElement.selected) {
     //gameboard theme
     gameThemeLinkElement.setAttribute("href", "/styles/game.css");
@@ -15,7 +16,7 @@ function saveGameSettings(event) {
     mainHeaderElement.classList.remove("red-background-scheme");
     mainHeaderElement.classList.remove("blue-background-scheme");
 
-    //body
+    //body color
     bodyElement.classList.add("body-default-color");
     bodyElement.classList.remove("body-red-color");
     bodyElement.classList.remove("body-blue-color");
@@ -151,6 +152,21 @@ function saveGameSettings(event) {
     }
   }
 
+  //font settings
+  if (openSansOptionElement.selected) {
+    bodyElement.classList.add("default-font-family");
+    bodyElement.classList.remove("times-new-roman-font-family");
+    bodyElement.classList.remove("courier-new-font-family");
+  } else if (timesNewRomanOptionElement.selected) {
+    bodyElement.classList.remove("default-font-family");
+    bodyElement.classList.add("times-new-roman-font-family");
+    bodyElement.classList.remove("courier-new-font-family");
+  } else {
+    bodyElement.classList.remove("default-font-family");
+    bodyElement.classList.remove("times-new-roman-font-family");
+    bodyElement.classList.add("courier-new-font-family");
+  }
+
   closeSettingsConfig();
 }
 
@@ -194,7 +210,3 @@ function savePlayerConfig(event) {
 
   closePlayerConfig();
 }
-
-/** TODO: Add a config setting where user can change color scheme
- * 1. construct buttons
- */
