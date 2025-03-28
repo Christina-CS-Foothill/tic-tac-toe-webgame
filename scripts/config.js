@@ -9,7 +9,7 @@ function saveGameSettings(event) {
   //color settings
   if (purpleOptionElement.selected) {
     //gameboard theme
-    gameThemeLinkElement.setAttribute("href", "/styles/game.css");
+    gameThemeLinkElement.setAttribute("href", "/styles/game-board/game.css");
 
     //main header
     mainHeaderElement.classList.add("default-background-scheme");
@@ -57,7 +57,10 @@ function saveGameSettings(event) {
     }
   } else if (redOptionElement.selected) {
     //gameboard theme
-    gameThemeLinkElement.setAttribute("href", "/styles/red-game.css");
+    gameThemeLinkElement.setAttribute(
+      "href",
+      "/styles/game-board/red-game.css"
+    );
 
     //main header
     mainHeaderElement.classList.remove("default-background-scheme");
@@ -105,7 +108,10 @@ function saveGameSettings(event) {
     }
   } else {
     //gameboard theme
-    gameThemeLinkElement.setAttribute("href", "/styles/blue-game.css");
+    gameThemeLinkElement.setAttribute(
+      "href",
+      "/styles/game-board/blue-game.css"
+    );
 
     mainHeaderElement.classList.remove("default-background-scheme");
     mainHeaderElement.classList.remove("red-background-scheme");
