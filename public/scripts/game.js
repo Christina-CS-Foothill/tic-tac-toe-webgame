@@ -65,6 +65,7 @@ function selectGameField(event) {
   const winnerId = checkForGameOver();
   if (winnerId !== 0) {
     endGame(winnerId);
+    //this is where the records should be saved
     return;
   }
   currentRound++;

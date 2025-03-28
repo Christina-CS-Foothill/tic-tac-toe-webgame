@@ -1,0 +1,30 @@
+{
+  "name": "100-days-of-code-project-10",
+  "version": "1.0.0",
+  "description": "This is a simple tic tac toe game from the Academind with a few of my own customizations.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christina-CS-Foothill/tic-tac-toe-webgame.git"
+  },
+  "keywords": [
+    "tic-tac-toe",
+    "academind"
+  ],
+  "author": "Christina Hunter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Christina-CS-Foothill/tic-tac-toe-webgame/issues"
+  },
+  "homepage": "https://github.com/Christina-CS-Foothill/tic-tac-toe-webgame#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
