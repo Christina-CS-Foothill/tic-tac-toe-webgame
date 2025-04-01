@@ -55,6 +55,22 @@ body {
   border-color: transparent;
 }
 
+#scores-section {
+  text-align: center;
+  width: 20rem;
+  margin: auto;
+  border: 1px solid rgb(47, 47, 47);
+  border-radius: 5px;
+}
+
+#scores {
+  padding: 0;
+}
+
+#scores li {
+  list-style: none;
+}
+
 .body-default-color {
   background-color: rgb(247, 239, 247);
 }

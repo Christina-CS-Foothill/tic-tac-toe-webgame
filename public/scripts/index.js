@@ -20,6 +20,8 @@ const players = [
   },
 ];
 
+const winLossRecords = [];
+
 const gameSettingsOverlayElement = document.getElementById("settings-overlay");
 const playerConfigOverlayElement = document.getElementById("config-overlay");
 const backdropElement = document.getElementById("backdrop");

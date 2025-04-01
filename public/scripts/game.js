@@ -126,7 +126,36 @@ function endGame(winnerId) {
     const winnerName = players[winnerId - 1].name;
     gameOverElement.firstElementChild.firstElementChild.textContent =
       winnerName;
+
+    const obj = {};
+    obj.winner = winnerName;
+    obj.time = new Date();
+
+    obj.gameNumber = winLossRecords.length + 1;
+    winLossRecords.push(obj);
+    updateScores(obj);
+    // console.log(winLossRecords);
   } else {
     gameOverElement.firstElementChild.textContent = "It's a draw!";
+    const obj = {};
+    obj.winner = "No one";
+    obj.time = new Date();
+
+    obj.gameNumber = winLossRecords.length + 1;
+    winLossRecords.push(obj);
+    updateScores(obj);
+    // console.log(winLossRecords);
   }
+}
+
+function updateScores(score) {
+  const scoresList = document.getElementById("scores");
+  let scoreItem;
+  const gameNumber = score.gameNumber;
+  const winner = score.winner;
+  scoreItem = document.createElement("li");
+  scoreItem.textContent = "Game " + gameNumber + ": " + winner + " won";
+  scoresList.appendChild(scoreItem);
+
+  console.log(winLossRecords);
 }

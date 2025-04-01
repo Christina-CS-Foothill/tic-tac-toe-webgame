@@ -18,6 +18,30 @@
     <script src="scripts/config.js" defer></script>
     <script src="scripts/game.js" defer></script>
     <script src="scripts/index.js" defer></script>
+    <script>
+
+      // if (window.localStorage) {
+      //   const savedScores = localStorage.getItem("scores");
+      //   console.log(savedScores);
+      // } else {
+      //   console.log("localstorage is not supported");
+      // }
+
+      // function updateScores() {
+      //   console.log(winLossRecords);
+      //   const scoresList = document.getElementById("scores");
+      //   let scoreItem;
+      //   for (winLossRecord of winLossRecords) {
+      //     console.log(winLossRecord);
+      //     const gameNumber = winLossRecord.gameNumber;
+      //     const winner = winLossRecord.winner;
+      //     const time = winLossRecord.time;
+      //     scoreItem = document.createElement("li");
+      //     scoreItem.textContent = "Winner of game " + gameNumber + " @ " + time + ": " + winner;
+      //     scoresList.appendChild(scoreItem);
+      //   }
+      // }
+    </script>
   </head>
 
   <body class="body-default-color default-font-family">
@@ -109,6 +133,12 @@
           <li data-col="2" data-row="3"></li>
           <li data-col="3" data-row="3"></li>
         </ol>
+      </section>
+      <!-- <button onclick="updateScores()">Save Score?</button> -->
+      <section id="scores-section">
+        <p>Scores</p>
+        <ul id="scores">
+        </ul>
       </section>
     </main>
   </body>
