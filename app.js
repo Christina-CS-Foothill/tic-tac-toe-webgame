@@ -12,7 +12,7 @@ app.use(express.static("public")); //these files are visible to visiters of your
 app.get("/", function (req, res) {
   // const htmlFilePath = path.join(__dirname, "index.html");
   // res.sendFile(htmlFilePath);
-  
+
   res.render("index");
 });
 
