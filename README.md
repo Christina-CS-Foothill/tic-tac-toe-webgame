@@ -1,6 +1,21 @@
 # Tic Tac Toe milestone project from Academind 100 Days of Code Web Dev Bootcamp
 Uses JS, CSS and HTML for a two player tic tac toe game that can be run in the browser
 
+My additions:
+- Added "Settings" button, where users can adjust the color scheme and font family of the game
+- Added a "Score Board", that tracks who won which games( Player 1, Player 2 or No one)
+- Created a simple server with Node.js and Express, served on port 3000.
+
+To run on your machine:
+1. Make sure node/npm are installed on your machine: https://nodejs.org/en/download
+2. clone the repo:
+   ``git clone https://github.com/Christina-CS-Foothill/tic-tac-toe-webgame.git``
+3. Open a terminal in your IDE (or just make sure you are in the correct directory. My IDE of choice is VSCode)
+    Run ``npm install``
+5. Now that node modules have been installed, start the app by running the following line in terminal
+   ``npm start``
+6. Open the app in your browser: http://localhost:3000
+
 <br>
 <br>
 <br>
