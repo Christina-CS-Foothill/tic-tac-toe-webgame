@@ -58,7 +58,7 @@ body {
 #scores-section {
   text-align: center;
   width: 20rem;
-  margin: auto;
+  margin: 0 auto 5rem auto;
   border: 1px solid rgb(47, 47, 47);
   border-radius: 5px;
 }
